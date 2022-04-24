@@ -130,7 +130,6 @@ async function postLogEvents(fetch, logflare, logEvent) {
 		);
 
 		const data = await response.json();
-		console.log(data);
 	} catch (e) {
 		console.log(e);
 	}
