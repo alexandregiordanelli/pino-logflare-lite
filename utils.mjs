@@ -136,10 +136,12 @@ async function postLogEvents(fetch, logflare, logEvent) {
 	}
 }
 
-export async function sendLogBackEnd(fetch, logflare, obj){
+export async function sendLogBackEnd(options, obj){
+	const { fetch, logflare } = options
     return postLogEvents(fetch, logflare, prepareLogBackEnd(obj))
 }
 
-export async function sendLogFrontEnd(fetch, logflare, obj){
+export async function sendLogFrontEnd(options, obj){
+	const { fetch, logflare } = options
     return postLogEvents(fetch, logflare, prepareLogFrontEnd(obj))
 }
