@@ -1,10 +1,11 @@
 {
   "name": "pino-logflare-lite",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.mjs",
   "exports": {
     ".": "./index.mjs",
-    "./browser": "./browser/index.mjs"
+    "./browser": "./browser/index.mjs",
+    "./server": "./server/index.mjs"
   },
   "type": "module",
   "keywords": [
